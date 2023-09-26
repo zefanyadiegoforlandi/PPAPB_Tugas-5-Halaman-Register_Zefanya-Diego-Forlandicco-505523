@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Judul Register -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:id="@+id/new_register_id"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Formulir Username -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Username"
+            android:paddingVertical="5dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/new_ETUsername_id"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <!-- Formulir Email -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Email"
+            android:paddingVertical="5dp"
+            android:id="@+id/new_ETEMail_id"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <!-- Formulir Nomor Telepon -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Phone"
+            android:paddingVertical="5dp"
+            android:id="@+id/new_ETPhone_id"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <!-- Formulir Kata Sandi -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text=""
+            android:paddingVertical="5dp"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:id="@+id/new_ETPassword_id"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <!-- Pilihan Persetujuan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By checking the box you agree to our"
+                android:id="@+id/new_checkbox_id"
+                android:textSize="8dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text=" Terms "
+                android:textColor="#0000FF"
+                android:id="@+id/new_termsBiru_id"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="and"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text=" Condition"
+                android:textColor="#0000FF"
+                android:id="@+id/new_conditionBiru_id"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <!-- Tombol Register -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Register"
+            android:id="@+id/new_btnRegister_id"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <!-- Tautan ke Halaman Login -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#0000FF"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
